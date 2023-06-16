@@ -13,4 +13,9 @@ export class ApiAnimalesService {
   getAnimales() {
     return this.http.get(this.apiUrl + "/animal");
   }
+
+  createAnimal(animal: any){
+    return this.http.post(this.apiUrl + "/animal", animal);
+
+  }
 }

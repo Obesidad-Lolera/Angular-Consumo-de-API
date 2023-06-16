@@ -1,0 +1,13 @@
+<form #dataForm="ngForm" (ngSubmit)="crearAnimal(dataForm.value)">
+
+        Nombre <input ngModel  name="nombre"> <br>
+        Especie <input ngModel  name="especie"> <br>
+        Cantidad de Patas <input ngModel  name="patas"> <br>
+        Cola <input ngModel  name="cola"> <br>
+
+        <button>Create</button>
+</form>
+
+<h1 *ngIf="result" > Animalito {{ result.nombre }} creado </h1>
+
+
